@@ -1,3 +1,9 @@
 x = int(input("Enter your star number: "))
 for i in range(x+1):
     print(i * "*")
+    
+#  2 star + per line Code
+
+x = int(input("Enter your star number: "))
+for i in range(x+1):
+    print((2 * i - 1) * "*")
