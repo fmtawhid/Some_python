@@ -2,8 +2,26 @@ x = int(input("Enter your star number: "))
 for i in range(x+1):
     print(i * "*")
     
-#  2 star + per line Code
+# 2 star + per line Code
 
 x = int(input("Enter your star number: "))
 for i in range(x+1):
     print((2 * i - 1) * "*")
+
+
+# Print your text lenth Detais
+
+wnumber=0
+lnumber=0
+dnumber=0
+text = input("Enter your text: ")
+for x in text:
+    if x == ' ':
+        wnumber = wnumber + 1
+    elif x>='a' and x <='z':
+        lnumber = lnumber + 1
+    elif x>='0' and x <='9':
+        dnumber = dnumber +1
+print("Word Number: ", wnumber + 1)
+print("latter Number: ",lnumber)
+print("Digit Number: ",dnumber)
